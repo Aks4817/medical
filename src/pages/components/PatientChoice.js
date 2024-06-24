@@ -10,6 +10,7 @@ export default function PatientChoice({onGoBack}) {
   };
   const handleGoBackToPatient = () => {
     setComponentToShow(null); // Reset componentToShow to null to show buttons again
+    console.log("pressed");
   };
 
 
