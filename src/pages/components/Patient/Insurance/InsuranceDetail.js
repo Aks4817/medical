@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PayMonthly from './PayMonthly';
-import ClaimConfirmation from '../Medical/ClaimConfirmation';
+import ClaimConfirmation from './ClaimConfirmation';
 
 function InsuranceDetail({ onGoBack, Startins }) {
   const [insuranceData, setInsuranceData] = useState({ "type": "a", "amount": "200", "monthlyPaid": "99", "claimDuration": "60", "lastClaimedOn": "55" });

@@ -1,0 +1,41 @@
+[33mcommit 1d78fdba814fb60af1f589fbe0808d419738d0bf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mweb3[m[33m)[m
+Author: Super User <root@DESKTOP-8F1JPKQ.>
+Date:   Thu Jun 27 21:21:23 2024 +0530
+
+    added functions till medical part
+
+[33mcommit 57b2e62ba7cc1fd935a9b8d25f0e6a4f936c5485[m[33m ([m[1;32mmain[m[33m)[m
+Author: Super User <root@DESKTOP-8F1JPKQ.>
+Date:   Thu Jun 27 15:39:45 2024 +0530
+
+    refactored
+
+[33mcommit f473ad705358184e4c65f1035e1c75a11cc83ec1[m
+Author: Super User <root@DESKTOP-8F1JPKQ.>
+Date:   Thu Jun 27 15:28:55 2024 +0530
+
+    refactored
+
+[33mcommit 0ca72986f18bedf65ec9d37268d836ac82f521ee[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Aks4817 <Anujkumarsingh4817@gmail.com>
+Date:   Tue Jun 25 01:00:20 2024 +0530
+
+    insurance part completed
+
+[33mcommit 20bbb93fe47a9b60ccf2b6fbb78d13f145e177bf[m
+Author: Aks4817 <Anujkumarsingh4817@gmail.com>
+Date:   Mon Jun 24 22:18:14 2024 +0530
+
+    medical completed
+
+[33mcommit 6d1006c78b8adb0d59474cba329c64b8e5823e87[m
+Author: Aks4817 <Anujkumarsingh4817@gmail.com>
+Date:   Mon Jun 24 21:10:49 2024 +0530
+
+    doctor completed
+
+[33mcommit 192fd1544a9e72f027b8e8c14dcae92cf9bd1a00[m
+Author: Aks4817 <Anujkumarsingh4817@gmail.com>
+Date:   Mon Jun 24 20:22:49 2024 +0530
+
+    Initial commit from Create Next App
