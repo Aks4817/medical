@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ViewPatientPastRecord from '../../Common/ViewPatientPastRecord';
 import AllowAccessToDoctor from './AllowAccessToDoctor';
 import RemoveAccessToDoctor from './RemoveAccessToDoctor';
-import EndTreatmentPatient from '../../Common/EndTreatmentPatient';
+import EndTreatment from '../../Common/EndTreatment';
 
 export default function MedicalComponent({ onGoBack }) {
   const [componentToShow, setComponentToShow] = useState(null);
@@ -23,8 +23,8 @@ export default function MedicalComponent({ onGoBack }) {
         return <AllowAccessToDoctor onGoBack={handleGoBackToMedicalComponent} />;
       case 'RemoveAccessToDoctor':
         return <RemoveAccessToDoctor onGoBack={handleGoBackToMedicalComponent} />;
-      case 'EndTreatmentPatient':
-        return <EndTreatmentPatient onGoBack={handleGoBackToMedicalComponent} />;
+      case 'EndTreatment':
+        return <EndTreatment onGoBack={handleGoBackToMedicalComponent} isDoctor={false} />;
       default:
         return null;
     }
@@ -39,7 +39,7 @@ export default function MedicalComponent({ onGoBack }) {
           <button onClick={() => handleComponentClick('ViewPastRecord')}>View your Past Record</button>
           <button onClick={() => handleComponentClick('AllowAccessToDoctor')}>Allow Access To Doctor</button>
           <button onClick={() => handleComponentClick('RemoveAccessToDoctor')}>Remove access from doctor</button>
-          <button onClick={() => handleComponentClick('EndTreatmentPatient')}>End Treatment</button>
+          <button onClick={() => handleComponentClick('EndTreatment')}>End Treatment</button>
           <button onClick={onGoBack}>Back</button>
         </div>
       )}

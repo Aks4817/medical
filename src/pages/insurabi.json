@@ -1,0 +1,148 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "Insurance__InsuranceAlreadyExists",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "Insurance__InsuranceDead",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "Insurance__InsuranceLastClaimedWithin30Days",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "Insurance__InvalidChoice",
+		"type": "error"
+	},
+	{
+		"inputs": [],
+		"name": "Insurance__NoInsuranceIssued",
+		"type": "error"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_choice",
+				"type": "uint256"
+			}
+		],
+		"name": "buyInsurance",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "doctor",
+				"type": "address"
+			}
+		],
+		"name": "claimInsurance",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "makePayment",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "resetInsurance",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "viewData",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "enum Insurance.InsuranceType",
+						"name": "insuranceType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "insuredAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "monthlyPaid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "claimDuration",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Insurance.InsurancePackage",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "viewPackage",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "enum Insurance.InsuranceType",
+						"name": "insuranceType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "insuredAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "monthlyPaid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "claimDuration",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Insurance.InsurancePackage",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

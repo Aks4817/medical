@@ -24,7 +24,7 @@ export default function DoctorChoice({ onGoBack }) {
       case 'NewMedPrescription':
         return <NewMedPrescription onGoBack={handleGoBack} />;
       case 'EndTreatment':
-        return <EndTreatment onGoBack={handleGoBack} />;
+        return <EndTreatment onGoBack={handleGoBack} isDoctor={true} />;
       default:
         return null;
     }

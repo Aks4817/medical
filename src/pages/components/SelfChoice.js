@@ -1,13 +1,16 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import DoctorChoice from "./Doctor/DoctorChoice";
 import PatientChoice from './Patient/PatientChoice';
+// import { useContractContext } from '../index'; // Adjust the import path as necessary
 
 export default function SelfChoice() {
   const [choice, setChoice] = useState(null);
+  // const { mainContract, insuranceContract, signer } = useContractContext();
 
   const handleDoctorClick = () => {
     setChoice("doctor");
   };
+
   const handleGoBackToSelf = () => {
     setChoice(null);
   };
