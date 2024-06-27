@@ -1,6 +1,7 @@
 import { useState } from "react";
-import DoctorChoice from "./Doctor/DoctorChoice";
-import PatientChoice from './Patient/PatientChoice';
+import DoctorChoice from "./DoctorChoice";
+import PatientChoice from './PatientChoice';
+
 
 export default function SelfChoice() {
   const [choice, setChoice] = useState(null);
@@ -9,7 +10,7 @@ export default function SelfChoice() {
     setChoice("doctor");
   };
   const handleGoBackToSelf = () => {
-    setChoice(null);
+    setChoice(null); // Reset componentToShow to null to show buttons again
   };
 
   const handlePatientClick = () => {
@@ -24,9 +25,9 @@ export default function SelfChoice() {
           <button onClick={handlePatientClick}>Patient</button>
         </>
       ) : choice === "doctor" ? (
-        <DoctorChoice onGoBack={handleGoBackToSelf} />
+        <DoctorChoice onGoBack={handleGoBackToSelf}/>
       ) : (
-        <PatientChoice onGoBack={handleGoBackToSelf} />
+        <PatientChoice onGoBack={handleGoBackToSelf}/>
       )}
     </div>
   );
